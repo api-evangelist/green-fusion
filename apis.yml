@@ -1,8 +1,28 @@
 aid: green-fusion
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/green-fusion.png
 name: Green Fusion
-description: 'Green Fusion is a company surfaced as a portfolio company of hv-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: climate-energy. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Green Fusion GmbH is a Berlin-based climate-energy software company that
+  provides an intelligent 360-degree energy management platform for the residential
+  real estate sector (Wohnungswirtschaft). Its software digitizes and optimizes building
+  heating systems: "Der Energiespar-Pilot" delivers digital boiler-room management
+  and optimized operation of conventional heat sources (gas, oil, district heating,
+  CHP/BHKW), while its AI platform for sector coupling (Sektorkopplung) integrates
+  heat pumps, PV systems, storage, and grid connectivity for intelligent monitoring
+  and control. The platform is TUV-certified under GEG section 71a. Green Fusion is
+  backed by HV Capital and surfaced in the API Evangelist network as a climate-energy
+  provider; it operates a customer control platform (control.green-fusion.de) but
+  publishes no public developer API at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/green-fusion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Climate Energy
+- Energy Management
+- Heating
+- Building Automation
+- Sustainability
+- Germany
+- IoT
 apis: []
+common:
+- type: DomainSecurity
+  url: security/green-fusion-domain-security.yml
+- type: Website
+  url: https://green-fusion.de
+- type: Login
+  url: https://control.green-fusion.de/
+- type: Blog
+  url: https://green-fusion.de/aktuelles/news-blog
+- type: Support
+  url: https://green-fusion.de/uber-uns/kontakt
+- type: PrivacyPolicy
+  url: https://green-fusion.de/datenschutz
+- type: LinkedIn
+  url: https://www.linkedin.com/company/green-fusion-gmbh/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
